@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+    <form action="">
+        <div class="day">
+          <label for="">DAY</label>
+          <input min="1" required max="31" id="d" placeholder="DD" type="number">
+          <span id="sd"></span>
+        </div>
+        <div class="month">
+          <label for="">MONTH</label>
+          <input id="m" placeholder="MM" type="number">
+          <span id="sm"></span>
+        </div>
+        <div class="year">
+          <label for="">YEAR</label>
+          <input id="y" placeholder="YYYY" type="number">
+          <span id="sy"></span>
+        </div>
+      </form>
+      <div class="buttons">
+        <button onclick="getValue()" class="arrow" style="cursor: pointer;"><img src="./assets/images/icon-arrow.svg" alt=""></button>
+      </div>
+      <div class="result">
+        <div class="ry">
+          <h1 id="years">--</h1>
+          <h1>years</h1>
+        </div>
+        <div class="rm">
+          <h1 id="months">--</h1>
+          <h1>months</h1>
+        </div>
+        <div class="rd">
+          <h1 id="days">--</h1>
+          <h1>days</h1>
+
+        </div>
+      </div>
+    </div>
+<script src="app.js"></script> 
+</body>
+</html>
